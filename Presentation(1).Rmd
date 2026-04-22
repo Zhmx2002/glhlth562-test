@@ -1,0 +1,107 @@
+---
+title: "Presentation"
+author: 'Jingyun Liu, Michelle Zhuang '
+date: "2026-04-06"
+output:
+  pdf_document: default
+  html_document: default
+format: revealjs
+---
+
+---
+title: "Global Health Trend Explorer"
+format: revealjs
+---
+
+## 🌍 Overview
+
+- Interactive Shiny app to explore global health trends  
+- Uses real-time data from the World Bank API  
+- Allows users to select:
+  - Country  
+  - Indicator  
+  - Time range  
+
+---
+
+## 🎯 Motivation
+
+- Public health data is often hard to interpret  
+- Users need simple tools to explore trends  
+- Goal:
+  - Make data **interactive**
+  - Provide **clear summaries**
+
+---
+
+## ⚙️ Pipeline
+
+1. Data Input (user selections)  
+2. Data Retrieval (World Bank API)  
+3. Data Processing (clean + filter)  
+4. Analysis (summary statistics)  
+5. Interpretation (rule-based explanation)
+
+---
+
+## 🧪 Demo
+
+👉 Show the app:
+
+- Select a country (e.g., China)  
+- Choose indicator (Life Expectancy)  
+- Adjust time range  
+
+✔ Displays:
+- Trend plot  
+- Summary statistics  
+- Interpretation  
+
+---
+
+## 💡 Design Rationale
+
+- Used **World Bank API** → real-time, reliable data  
+- Chose **Shiny** → interactive and user-friendly  
+- Used **rule-based interpretation**:
+  - More stable than LLMs  
+  - No dependency on API keys  
+  - Fully reproducible  
+
+---
+
+## 🗣️ Communication
+
+- Clean UI with minimal inputs  
+- Clear plot + labeled axes  
+- Simple interpretation for non-technical users  
+
+---
+
+## ⚠️ Limitations
+
+- Only one country at a time  
+- Limited set of indicators  
+- Interpretation is simple (rule-based)
+
+---
+
+## 🚀 Future Improvements
+
+- Multi-country comparison  
+- Correlation between indicators  
+- More advanced interpretation (AI/LLM)
+
+---
+
+## ✅ Summary
+
+- Built a functional data product  
+- Integrated API + visualization  
+- Generated interpretable insights  
+
+👉 Helps users understand global health trends quickly
+
+---
+
+## Thank You
